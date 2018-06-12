@@ -6,4 +6,4 @@ To start using the application follow these steps:
 1- npm install
 2-set DEBUG=NabdaNetImageUploader.WebPortal:* & set NODE_ENV=development & npm run build & npm start
 
-To use the application you should navigate to "http://localhost:<PORT>/<SSID>", in this case SSID is an id that identifies each study for each patient.
+To use the application you should navigate to "http://localhost:{PORT}/{SSID}", in this case SSID is an id that identifies each study for each patient.
