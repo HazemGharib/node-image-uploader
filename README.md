@@ -1,3 +1,5 @@
+<h1>Node Dicom Image Uploader</h1>
+
 This application is an uploading & archiving portal for medical images (dicom images and dicom dir files). It is using dropzone component and built against node.js with handlebars engine as front end parser.
 
 To start using the application follow these steps:
