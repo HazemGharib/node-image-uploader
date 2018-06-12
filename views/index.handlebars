@@ -1,0 +1,78 @@
+<div class="row add-margin-50">
+    <div class="col-md-1">
+
+    </div>
+    <div class="col-md-4">
+        <fieldset>
+            <legend>Upload Type</legend>
+            <label class="radio">
+                <input checked="checked" id="UploadType" name="UploadType" type="radio" value="DicomImage">
+                <span class="outer">
+                    <span class="inner" style="transform: scale(0.7)">
+                    </span>
+                </span>Dicom Images (.dcm only)
+            </label>
+            <br/>
+            <label class="radio">
+                <input id="UploadType" name="UploadType" type="radio" value="DicomDir">
+                <span class="outer">
+                    <span class="inner" style="transform: scale(0.7)">
+                    </span>
+                </span>Dicom Dir (.rar or .zip only)
+            </label>
+        </fieldset>
+
+    </div>
+
+    <div class="col-md-3">
+
+    </div>
+    <div class="col-md-3">
+        <fieldset>
+            <legend>Category</legend>
+            <span id="Categories"></span>
+
+            <ul class="nav" style="height: 50px;">
+                <div class="material-dropdown">
+                    <figure></figure>
+                    <figure class="middle"></figure>
+                    <p class="cross">x</p>
+                    <figure></figure>
+                    <ul class="dropdown" style="z-index: 1000;">
+                        {{#each item}}
+                                <li><a href="#">{{this.Text}}</a></li>
+                        {{/each}}
+                    </ul>
+                </div>
+            </ul>
+        </fieldset>
+    </div>
+    <div class="col-md-2">
+
+    </div>
+</div>
+<div class="row row add-margin-50">
+    <div class="col-md-1">
+
+    </div>
+    <div class="col-md-10">
+        {{>_ImagesDropzone}}
+        {{>_DicomDirDropzone}}
+    </div>
+    <div class="col-md-1">
+
+    </div>
+</div>
+
+<script type="text/javascript">
+    var materialdropdown = document.querySelector('.material-dropdown'),
+        middle = document.querySelector('.middle'),
+        cross = document.querySelector('.cross'),
+        dropdown = document.querySelector('.dropdown');
+
+    materialdropdown.addEventListener('click', function () {
+        middle.classList.toggle('active');
+        cross.classList.toggle('active');
+        dropdown.classList.toggle('active');
+    });
+</script>

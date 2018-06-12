@@ -1,0 +1,104 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+footer {
+    bottom: 0;
+    width:100%;
+    margin: auto;
+    left: 0;
+    padding: 0 150px;
+}
+
+/* Site Brand*/
+#logo {
+    height: 43px;
+    float: left;
+    margin-right: 20px;
+    -webkit-filter: brightness(3);
+}
+
+#logoContainer {
+    margin-left: 15px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.site-brand {
+  float: left;
+  padding: 15px 15px;
+  font-size: 18px;
+  line-height: 20px;
+  cursor: default;
+}
+
+.site-brand:hover,
+.site-brand:focus {
+  text-decoration: none;
+}
+
+@media (min-width: 768px) {
+  .navbar > .container .site-brand {
+    margin-left: -15px;
+  }
+}
+
+.navbar-default .site-brand {
+  color: #777777;
+}
+
+.navbar-default .site-brand:hover,
+.navbar-default .site-brand:focus {
+  color: #5e5e5e;
+  background-color: transparent;
+}
+
+.navbar-inverse .site-brand {
+  color: #88d4d4;
+}
+
+.navbar-inverse .site-brand:hover,
+.navbar-inverse .site-brand:focus {
+  color: #85ffff;
+  background-color: transparent;
+}
+
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+/* styles for validation helpers */
+.field-validation-error {
+    color: #b94a48;
+}
+
+.field-validation-valid {
+    display: none;
+}
+
+input.input-validation-error {
+    border: 1px solid #b94a48;
+}
+
+input[type="checkbox"].input-validation-error {
+    border: 0 none;
+}
+
+.validation-summary-errors {
+    color: #b94a48;
+}
+
+.validation-summary-valid {
+    display: none;
+}

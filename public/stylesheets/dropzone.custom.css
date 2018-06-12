@@ -1,0 +1,18 @@
+﻿
+#dropzonImagesDiv, #dropzonDicomDirDiv {
+    background: whitesmoke;
+    cursor: pointer;
+    border: 2px dashed #0087F7;
+    padding: 50px;
+    text-align: center;
+    color: rgba(0, 135, 247, 0.94);
+}
+
+.dz-message {
+    font-size: large;
+    font-weight: 900;
+}
+
+.add-margin-50 {
+    margin-top: 50px;
+}

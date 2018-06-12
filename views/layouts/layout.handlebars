@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.1/normalize.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Roboto:400,500,300,700" rel="stylesheet" type="text/css">
+
+    <meta charset="UTF-8">
+    <meta name="google" content="notranslate">
+    <meta http-equiv="Content-Language" content="en">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{title}}</title>
+
+    <link rel='stylesheet' href='/stylesheets/Site.css' />
+    <link rel='stylesheet' href='/stylesheets/dropzone.custom.css' />
+    <link rel='stylesheet' href='/stylesheets/bootstrap.min.css' />
+    <link rel='stylesheet' href='/stylesheets/bootstrap.css' />
+    <link rel='stylesheet' href='/stylesheets/material/material.animations.css' />
+    <link rel='stylesheet' href='/stylesheets/material/material.controls.css' />
+    <link rel='stylesheet' href='/stylesheets/iziToast/iziToast.min.css' />
+    <link rel='stylesheet' href='/stylesheets/icomoon/icomoon.css' />
+    <link rel='stylesheet' href='/stylesheets/dropzone/basic.css' />
+    <link rel='stylesheet' href='/stylesheets/dropzone/basic.min.css' />
+    <link rel='stylesheet' href='/stylesheets/dropzone/dropzone.css' />
+    <link rel='stylesheet' href='/stylesheets/dropzone/dropzone.min.css' />
+    
+    <script type="text/javascript" src='/javascripts/jquery-1.10.2.min.js'></script>
+    <script type="text/javascript" src='/javascripts/modernizr-2.6.2.js'></script>
+
+    <script type="text/javascript">
+        var uploadedFileURL = '/SaveUploadedFile/' + {{ssid}};
+        var uploadedDicomDirURL = '/SaveUploadedDicomDir/' + {{ssid}};
+    </script>
+</head>
+
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div id="logoContainer" class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <img id="logo" src="/images/NabdanetLogo.png" />
+                <a class="site-brand" href="#">Uploader</a>
+            </div>
+        </div>
+    </div>
+    <div class="container body-content">
+        {{{body}}}
+        <footer>
+            <hr />
+            <p>&copy; {{currentYear}} - NABDANET Uploader</p>
+        </footer>
+    </div>
+
+    <script type="text/javascript" src='/javascripts/iziToast/iziToast.min.js'></script>
+    <script type="text/javascript" src='/javascripts/dropzone/dropzone.js'></script>
+    <script type="text/javascript" src='/javascripts/dropzone.objects.js'></script>
+    <script type="text/javascript" src='/javascripts/bootstrap.js'></script>
+    <script type="text/javascript" src='/javascripts/respond.js'></script>
+</body>
+
+</html>
